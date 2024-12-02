@@ -12,3 +12,5 @@ window.onload = function() {        // espera pelo carregamento completo da pág
 
 // 3
 document.querySelector('.availability-content').style.display = 'none';     // utilizando 'querySelector' para seleçionar o elemento da classe availabilit-content e definindo a propriedade display como 'none' para ocutar os elementos
+
+// 4 realizada no arquivo styels.css
