@@ -667,3 +667,27 @@ footer .footer-content .footer-links .footer-subscribe:hover {
   color: blue;          /* define a cor do texto como azul */
   font-weight: bold;    /* define o texto como negrito */
   }
+
+  /* 5 */
+  
+body {    /* torna o contêiner principal um flex container */
+  display: flex;
+  flex-direction: column;   /* alinha os elementos em uma coluna */
+}
+
+.hero {    /* define a ordem dos elementos de 'class' hero */
+  order: 1;     /* definindo como primeiro elemento */
+}
+
+.find {
+  order: 2;  /* definindo como segundo elemento */
+}
+
+.recently-added {
+  order: 3;
+}
+
+.footer {
+  order: 4;
+}
+  
