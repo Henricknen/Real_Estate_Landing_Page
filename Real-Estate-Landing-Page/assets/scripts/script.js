@@ -9,3 +9,6 @@ window.onload = function() {        // espera pelo carregamento completo da pág
     
     imagemHeroContent.src = 'assets/images/new_search.png';         // substitui o atributo src pela nova imagem
   };
+
+// 3
+document.querySelector('.availability-content').style.display = 'none';     // utilizando 'querySelector' para seleçionar o elemento da classe availabilit-content e definindo a propriedade display como 'none' para ocutar os elementos
