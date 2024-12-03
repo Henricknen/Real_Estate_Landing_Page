@@ -16,3 +16,9 @@ document.querySelector('.availability-content').style.display = 'none';     // u
 // 4 realizada no arquivo styeles.css
 
 // 5 realizada no arquivo styeles.css
+
+// 6
+document.getElementById("btn-contact").addEventListener("click", function(event) {      // 'getElementById' seleçiona o elemento de id 'btn-contact' e 'addEventListener' adiçiona um evento de click
+  event.preventDefault();     // impede a ação padrão evitanado que a página seja rolada para cima ou recarregamento de outra página
+  alert("O botão foi acionado!");
+});
