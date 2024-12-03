@@ -33,7 +33,7 @@ newOption.textContent = "Presidente Prudente";
 
 locationSelect.appendChild(newOption);      // adiciona a nova opção ao final do 'select'
 
-//8
+// 8
 const blogItem = document.querySelector('.navbar-list li:nth-child(4)');    // localizando o item 'Blog' que é o penúltimo item dde 'navbar-list'
 
 const aboutUsItem = document.createElement('li');     // criando um novo item de lista
@@ -45,3 +45,18 @@ aboutUsLink.textContent = 'ABOUT US';     // texto do link
 aboutUsItem.appendChild(aboutUsLink);   // adicionando o link ao item de lista
 
 blogItem.parentNode.insertBefore(aboutUsItem, blogItem.nextSibling);      // inserindo o item 'about us' depois do item "Blog"
+
+// 9
+
+const subscribeForm = document.querySelector('.footer-subscribe'); // 'querySelector' seleçiona o formulário de inscrição
+const emailInput = subscribeForm.querySelector('input[type="text"]'); // seleçiona o campo do email cujo 'type' é text
+
+subscribeForm.addEventListener('submit', function(event) {
+  event.preventDefault();     // 'preventDefault' impede a ação padrão 'envio' do formulário para que possa fazer a validação
+
+  if (emailInput.value.trim() === '') {   // verificando se o campo de email está 'vazio'
+    alert('O campo de email está vazio');   // se estiver exibe essa menssagem no alert
+  } else {
+    alert('Email enviado:');    // se o campo estiver preenchido é possível enviar o formulário
+  }
+});
