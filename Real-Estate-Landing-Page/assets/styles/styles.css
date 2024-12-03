@@ -662,13 +662,14 @@ footer .footer-content .footer-links .footer-subscribe:hover {
   }
 }
 
-/* 4 */
+/* 4 Estilizar um Parágrafo no Rodapé: */
+
 #estilizacao {
   color: blue;          /* define a cor do texto como azul */
   font-weight: bold;    /* define o texto como negrito */
   }
 
-  /* 5 */
+  /* 5 Mover Elemento: */
   
 body {    /* torna o contêiner principal um flex container */
   display: flex;
@@ -691,3 +692,31 @@ body {    /* torna o contêiner principal um flex container */
   order: 4;
 }
   
+/* 10 Seção de “Depoimentos e Avaliações" */
+
+.footer {
+  position: relative;
+  z-index: 1;
+}
+
+#testimonials-section {
+  margin-top: 20px; 
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial {
+  width: 300px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
