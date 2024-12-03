@@ -32,3 +32,16 @@ newOption.value = "Presidente Prudente";    // define o valor e o texto da nova 
 newOption.textContent = "Presidente Prudente";
 
 locationSelect.appendChild(newOption);      // adiciona a nova opção ao final do 'select'
+
+//8
+const blogItem = document.querySelector('.navbar-list li:nth-child(4)');    // localizando o item 'Blog' que é o penúltimo item dde 'navbar-list'
+
+const aboutUsItem = document.createElement('li');     // criando um novo item de lista
+const aboutUsLink = document.createElement('a');        // criando um link dentro do novo item de lista
+
+aboutUsLink.href = '#';     // definindo o link do item
+aboutUsLink.textContent = 'ABOUT US';     // texto do link
+
+aboutUsItem.appendChild(aboutUsLink);   // adicionando o link ao item de lista
+
+blogItem.parentNode.insertBefore(aboutUsItem, blogItem.nextSibling);      // inserindo o item 'about us' depois do item "Blog"
