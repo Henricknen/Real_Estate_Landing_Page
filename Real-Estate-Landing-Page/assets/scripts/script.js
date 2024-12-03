@@ -1,7 +1,7 @@
 // 1
-var element = document.getElementById('substiticao');       // seleciona o elemento com o ID "substiticao"
+var element = document.getElementById('substiticao');       // seleciona o elemento com o id 'substiticao'
 
-element.textContent = 'Bem-vindo ao Nosso Site';        // altera o texto para "Bem-vindo ao Nosso Site"
+element.textContent = 'Bem-vindo ao Nosso Site';        // altera o texto para 'Bem-vindo ao Nosso Site'
 
 // 2
 window.onload = function() {        // espera pelo carregamento completo da página
@@ -13,12 +13,22 @@ window.onload = function() {        // espera pelo carregamento completo da pág
 // 3
 document.querySelector('.availability-content').style.display = 'none';     // utilizando 'querySelector' para seleçionar o elemento da classe availabilit-content e definindo a propriedade display como 'none' para ocutar os elementos
 
-// 4 realizada no arquivo styeles.css
+// 4 realizada no arquivo styles.css
 
-// 5 realizada no arquivo styeles.css
+// 5 realizada no arquivo styles.css
 
 // 6
 document.getElementById("btn-contact").addEventListener("click", function(event) {      // 'getElementById' seleçiona o elemento de id 'btn-contact' e 'addEventListener' adiçiona um evento de click
   event.preventDefault();     // impede a ação padrão evitanado que a página seja rolada para cima ou recarregamento de outra página
   alert("O botão foi acionado!");
 });
+
+//7
+var locationSelect = document.querySelector('select[name="location"]');     // acessando o elemento 'select' de name 'location'
+
+var newOption = document.createElement("option");     // cria um novo elemento 'option'
+
+newOption.value = "Presidente Prudente";    // define o valor e o texto da nova opção
+newOption.textContent = "Presidente Prudente";
+
+locationSelect.appendChild(newOption);      // adiciona a nova opção ao final do 'select'
